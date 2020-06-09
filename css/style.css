@@ -1,0 +1,94 @@
+/*
+Colors used:
+White: #FFFFFF;
+Black: #000000;
+Yellow: #F0DE46;
+Light grey: #EDEDED;
+Light blue: #D3E9EE;
+*/
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* typography*/
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.48em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.07em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.72em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%
+}
+
+/* links */
+a {
+  color: #ff7f50; /* orange */
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #06c746; /* green */
+  text-decoration: underline;
+}
+
+a:active {
+  color: #1846de; /* blue */
+}
+
+
+/* button primary */
+.button {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.5;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* button secondary */
+.button.secondary {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.button.secondary:hover,
+.button.contact:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
