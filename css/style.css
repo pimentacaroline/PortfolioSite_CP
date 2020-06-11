@@ -41,25 +41,33 @@ h4 {
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 /* links */
 a {
-  color: #ff7f50; /* orange */
+  color: #1846de;
+  /* orange */
+  text-decoration: none;
+}
+
+a:visited {
+  color: ##ffffff;
+  /* orange */
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #06c746; /* green */
+  color: #1846de;
+  /* green */
   text-decoration: underline;
 }
 
 a:active {
-  color: #1846de; /* blue */
+  color: #1846de;
+  /* blue */
 }
-
 
 /* button primary */
 .button {
@@ -68,7 +76,7 @@ a:active {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 300;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 3px;
   transition: 0.2s opacity;
 }
@@ -90,5 +98,113 @@ a:active {
 .button.secondary:hover,
 .button.contact:focus {
   background-color: #000000;
+  color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+svg {
+  width: 32px;
+  padding: 10px 10px;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#hero {
+  background-color: #EDEDED;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact {
+  text-align: center;
+  border-top: 1px solid #4a4a4a;
+}
+
+#work {
+  background-color: #EDEDED;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#my-process {
+  background-color: #EDEDED;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#my-process h2 {
+  text-align: center;
+}
+
+#my-story {
+  background-color: #EDEDED;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#my-story .row {
+  padding-bottom: 25px;
+}
+
+#about {
+  background-color: #EDEDED;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#skills-tools h2 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+  color: #ffffff;
+}
+
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 1px 11px 0px rgba(50, 50, 50, 0.47);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 102px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #ffffff;
 }
