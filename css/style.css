@@ -47,30 +47,24 @@ img {
 /* links */
 a {
   color: #1846de;
-  /* orange */
-  text-decoration: none;
 }
 
 a:visited {
-  color: ##ffffff;
-  /* orange */
-  text-decoration: none;
+  color: #1846de;
 }
 
 a:hover,
 a:focus {
-  color: #1846de;
-  /* green */
-  text-decoration: underline;
+  color: #b800eb;
 }
 
 a:active {
   color: #1846de;
-  /* blue */
 }
 
 /* button primary */
-.button {
+.button,
+.button:visited {
   display: inline-block;
   background-color: #000000;
   color: #ffffff;
@@ -86,8 +80,6 @@ a:active {
 .button:hover,
 .button:focus {
   opacity: 0.5;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 /* button secondary */
@@ -112,21 +104,26 @@ a:active {
   margin: 25px 0;
 }
 
-#hero h1,
-#hero p {
-  text-align: center;
+.logo,
+.logo:visited {
+  max-width: 250px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus {
+  max-width: 250px;
+  color: #b800eb;
+  text-decoration: none;
 }
 
 #hero {
   background-color: #f2f4f5;
   padding: 20px 0;
   display: inline-block;
-  width: 100%;
-}
-
-#contact {
   text-align: center;
-  border-top: 3px solid #000000;
+  width: 100%;
 }
 
 #work {
@@ -170,7 +167,7 @@ a:active {
 #about,
 #about-hero {
   background-color: #ffffff;
-  padding: 40px 0;
+  padding: 40px 0 0;
   display: inline-block;
   width: 100%;
 }
@@ -196,12 +193,6 @@ a:active {
 
 #my-story {
   background-color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.logo {
-  max-width: 250px;
-  color: #000000;
 }
 
 header {
@@ -213,10 +204,6 @@ header {
   width: 100%;
 }
 
-main {
-  padding-top: 102px;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -226,11 +213,31 @@ nav>ul>li {
   display: inline-block;
 }
 
-nav>ul>li>a {
+nav>ul>li>a,
+nav>ul>li>a:visited {
   padding: 0 10px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 700;
   color: #000000;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #b800eb;
+}
+
+main {
+  padding-top: 102px;
+}
+
+footer {
+  text-align: center;
+  border-top: 3px solid #000000;
 }
 
 i {
@@ -288,6 +295,10 @@ i {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -301,10 +312,6 @@ Medium devices (640px and larger)
 
   main {
     padding-top: 99px;
-  }
-
-  body {
-    font-size: 18px;
   }
 
   #hero span {
@@ -328,6 +335,13 @@ Medium devices (640px and larger)
     display: table;
   }
 
+  .logo {
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    padding: 8px 16px;
+  }
+
   #skills-tools h2 {
     text-align: center;
   }
@@ -339,14 +353,6 @@ Medium devices (640px and larger)
   #work h3 {
     margin-top: 12px;
     margin-bottom: 0;
-  }
-
-  .logo {
-    width: auto;
-    float: left;
-    margin-top: 10px;
-    border: 1px solid #000000;
-    padding: 8px 16px;
   }
 }
 
@@ -365,7 +371,7 @@ Large devices (1024px or larger)
     width: 30%;
     float: right;
     padding-top: 0;
-    }
+  }
 
   .container {
     max-width: 1200px;
@@ -376,9 +382,6 @@ Large devices (1024px or larger)
   #my-story {
     text-align: left;
   }
-
-
-
 }
 
 /* ==============================
