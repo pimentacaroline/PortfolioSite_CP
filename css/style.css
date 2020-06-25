@@ -2,21 +2,29 @@
 Colors used:
 White: #FFFFFF;
 Black: #000000;
-Yellow: #F0DE46;
+Purple: #960096;
 Light grey: #f2f4f5;
-Light blue: #c3dae6;
+Blue: #1846de;
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f2f4f5;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #000000;
+  color: #000;
 }
 
-/* typography*/
-h1, h2, h3, h4 {
+/* typography */
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -55,7 +63,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #b800eb;
+  color: #960096;
 }
 
 a:active {
@@ -66,8 +74,8 @@ a:active {
 .button,
 .button:visited {
   display: inline-block;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 300;
   text-decoration: none;
@@ -85,14 +93,14 @@ a:active {
 /* button secondary */
 .button.secondary {
   background-color: transparent;
-  color: #000000;
-  border: 2px solid #000000;
+  color: #000;
+  border: 2px solid #000;
 }
 
 .button.secondary:hover,
 .button.contact:focus {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
 }
 
 /* Layout styling */
@@ -109,14 +117,14 @@ a:active {
   max-width: 250px;
   line-height: 2.4;
   padding-left: 10px;
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
 .logo:hover,
 .logo:focus {
-  max-width: 150px;
-  color: #b800eb;
+  max-width: 250px;
+  color: #960096;
   text-decoration: none;
 }
 
@@ -129,7 +137,7 @@ a:active {
 }
 
 #work {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -145,14 +153,14 @@ a:active {
 }
 
 #my-process {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
 #bexz-hero {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 60px 0 0;
   display: inline-block;
   width: 100%;
@@ -167,13 +175,13 @@ a:active {
 }
 
 #about {
-  background-color: #ffffff;
+  background-color: #fff;
   display: inline-block;
   width: 100%;
 }
 
 #about-hero {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 50px 0 10px;
 }
 
@@ -182,7 +190,7 @@ a:active {
 }
 
 #skills-tools {
-  background-color: #ffffff;
+  background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: left;
@@ -197,39 +205,39 @@ a:active {
 }
 
 #my-story {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 header {
   background-color: #f2f4f5;
-  padding: 10px 0 10px;
-  box-shadow: 0px 1px 11px 0px rgba(50, 50, 50, 0.47);
+  padding: 10px 0;
+  box-shadow: 0 1px 11px 0 rgba(50, 50, 50, 0.47);
   position: fixed;
   width: 100%;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a,
-nav>ul>li>a:visited {
+nav > ul > li > a,
+nav > ul > li > a:visited {
   padding: 0 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
-nav>ul>li>a:hover,
-nav>ul>li>a:focus {
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
   padding: 0 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  color: #b800eb;
+  color: #960096;
 }
 
 .navtoggle li:not(:last-child) {
@@ -254,18 +262,20 @@ nav>ul>li>a:focus {
   padding: 4px 0;
 }
 
-
 footer {
   text-align: center;
-  border-top: 3px solid #000000;
+  border-top: 3px solid #000;
 }
 
 i {
   padding: 10px;
 }
 
+.social a {
+  text-decoration: none;
+}
 
-/* animations*/
+/* animations */
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -331,7 +341,7 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -339,7 +349,7 @@ Medium devices (640px and larger)
     padding-top: 99px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -347,10 +357,52 @@ Medium devices (640px and larger)
     display: block;
   }
 
-  .col-md-6 {
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
     width: 50%;
-    float: left;
-    padding: 15px;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
   }
 
   [class*="col-"] {
@@ -397,17 +449,52 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 60%;
-    float: left;
-    padding: 15px;
-    margin-right: 25px;
+  .col-md-1 {
+    width: 8.33%;
   }
 
-  .col-lg-5 {
-    width: 30%;
-    float: right;
-    padding-top: 0;
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
   }
 
   .container {
@@ -416,17 +503,16 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
+  #skills[class*="col-"] {
+    padding-top: 0;
+  }
+
   #my-story {
     text-align: left;
   }
+
+  #skills-tools h2 {
+    text-align: left;
+    padding-left: 35px;
+  }
 }
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
-
-/* ==============================
-Extra-large devices (1920px or larger)
-================================= */
-@media only screen and (min-width: 1920px) {}
